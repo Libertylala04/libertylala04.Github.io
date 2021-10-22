@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(https://cdn-image.hipwee.com/wp-content/uploads/2015/03/mengajarkan-orang-lain-750x422.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.top-wrapper p {
+  opacity: 1;
+  margin-bottom: 3px;
+  color: #fcfafd;
+}
+.top-wrapper span {
+  background-color: rgb(51, 41, 41);
+}
+
+.btn-wrapper {
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.signup {
+  background-color: #fa5bb2;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position: fixed;
+  top: 0;
+
+  z-index: 10;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  background-color: rgba(253, 6, 241, 0.945);
+  transition: all 0.5s;
+}
+
+.header-right:hover {
+  background-color: rgba(247, 201, 229, 0.993);
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+}
+
+.lesson-wrapper {
+  height: 500px;
+  padding-bottom: 80px;
+  background-color: rgb(248, 219, 165);
+  text-align: center;
+}
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: black;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  color: rgb(14, 13, 13);
+}
+.lesson-icon span {
+  background-color: yellow;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+  color: rgb(22, 17, 17);
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+  background-color: turquoise;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5d99ca;
+  cursor: pointer;
+  box-shadow: 0 7px #1d08db;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: white;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+  background-color: coral;
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 920px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .lessons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .lesson-wrapper {
+    height: 800px;
+    padding-bottom: 80px;
+    background-color: rgb(248, 219, 165);
+    text-align: center;
+  }
+  .lesson {
+    display: flex;
+    flex: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container {
+    width: 640px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    width: 400px;
+    padding: 0 15px;
+    margin: 0 auto;
+    font-size: 22px;
+  }
+  .lessons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .heading {
+    font-size: 15px;
+  }
+  .lesson-wrapper {
+    height: 165vh;
+    padding-bottom: 80px;
+    background-color: rgb(248, 219, 165);
+    text-align: center;
+    overflow: hidden;
+  }
+}
